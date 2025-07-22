@@ -1,9 +1,8 @@
 findproxy.py -themofo 
-Proxy Scanner for SharePoint Vulnerability Detection
-
+Proxy Scanner for use with proyxychains.
 Overview
 
-This project provides a simple vibe coded Python script (findproxy.py) to fetch free proxies using the proxyscrape library. The proxies can be used to scan networks for SharePoint vulnerabilities, such as CVE-2025-53770, by anonymizing network requests. This is useful for security researchers and network administrators to test SharePoint servers for known exploits or misconfigurations. 
+This project provides a simple vibe coded Python script (findproxy.py) to fetch free proxies using the proxyscrape library. The proxies are saved in the correct format for proxychains.
 
 Prerequisites
 
