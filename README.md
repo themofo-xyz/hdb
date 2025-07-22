@@ -1,1 +1,100 @@
-# hdb
+findproxy.py -themofo 
+Proxy Scanner for SharePoint Vulnerability Detection
+
+Overview
+
+This project provides a simple vibe coded Python script (findproxy.py) to fetch free proxies using the proxyscrape library. The proxies can be used to scan networks for SharePoint vulnerabilities, such as CVE-2025-53770, by anonymizing network requests. This is useful for security researchers and network administrators to test SharePoint servers for known exploits or misconfigurations. 
+
+Prerequisites
+
+
+
+
+
+Python 3.6 or higher
+
+
+
+pip package manager
+
+
+
+A working internet connection to fetch proxies
+
+Installation
+
+
+
+
+
+Clone or download this repository to your local machine.
+
+
+
+Create and activate a virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+.\venv\Scripts\activate   # Windows
+
+
+
+Install the required dependencies:
+
+pip install -r requirements.txt
+
+Usage
+
+
+
+
+
+Ensure the dependencies are installed.
+
+
+
+Run the script to fetch proxies:
+
+python findproxy.py
+
+
+
+The script will retrieve a list of proxies (e.g., HTTP, HTTPS) and can be modified to filter proxies by country, anonymity, or type.
+
+
+
+Use the proxies with a network scanning tool (e.g., Nmap) to scan for SharePoint vulnerabilities.
+
+Example
+
+To fetch HTTP proxies from the USA and print them:
+
+from proxyscrape import create_collector
+
+collector = create_collector('my-collector', 'http')
+proxy = collector.get_proxy({'code': 'us'})
+print(proxy)
+
+Notes
+
+
+
+
+
+Free proxies from proxyscrape may be unreliable or slow. Consider premium proxies for critical tasks.
+
+
+
+Always obtain permission before scanning networks to comply with legal and ethical guidelines.
+
+
+
+Check Microsoft’s Security Response Center (https://msrc.microsoft.com) for the latest SharePoint vulnerability updates.
+
+Contributing
+
+Feel free to open issues or submit pull requests for improvements or bug fixes. -purptea
+
+License
+
+This project is licensed under the MIT License.
