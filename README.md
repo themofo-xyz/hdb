@@ -62,7 +62,6 @@ The script will retrieve a list of proxies (e.g., HTTP, HTTPS) and can be modifi
 
 
 
-Use the proxies with a network scanning tool (e.g., Nmap) to scan for SharePoint vulnerabilities.
 
 Example
 
@@ -88,7 +87,6 @@ Always obtain permission before scanning networks to comply with legal and ethic
 
 
 
-Check Microsoft’s Security Response Center (https://msrc.microsoft.com) for the latest SharePoint vulnerability updates.
 
 Contributing
 
